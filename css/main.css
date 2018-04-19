@@ -1,0 +1,199 @@
+
+body {
+    line-height:1;
+    margin: 0;
+    padding: 0;
+}
+
+/*mine*/
+/*----------------indext----------------*/
+/*menu*/
+#menucover {
+    margin: 40px 40px 0px 40px;
+    text-align: center;
+}
+#menu {
+    margin: 0px auto;
+}
+#headerbg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#m_btn {
+    display: none;
+}
+#m_header {
+    display: none;
+}
+/*body*/
+/*first content*/
+.bodycontent {
+    padding: 60px 20px 20px 50px;
+}
+.bodycontent .book.icon {
+    color: brown;
+    font-size: 40px;
+}
+
+.bodycontent img {
+    width: 375px;
+    height: 250px;
+}
+.bodycontent p {
+    color:#666;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/*second content*/
+.bodycontent .specialapear {
+    text-align: center;
+}
+.bodycontent .road.icon {
+    color: cadetblue;
+    font-size: 40px;
+}
+.bodycontent .specialapear .reveal {
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.bodycontent .specialapear .segment .reveal img {
+    margin: 0px auto ;
+    width: 200px !important;
+    height:200px;
+}
+
+/*third content*/
+.bodycontent .star.icon {
+    font-size: 40px;
+    color: gold;
+}
+.ui.piled.segment, .ui.piled.segments {
+    text-align: center;
+}
+.ui.card {
+   width: 900px;
+}
+.ui.card>.image>img, .ui.cards>.card>.image>img {
+    width: 900px;
+    height: 500px;
+}
+
+/*footer*/
+#footer {
+    width: 100%;
+    background-color: #d4d4d4;
+    border-top: 3px solid gray;
+    width: 100%;
+    clear: both;
+    float: left;
+}
+#footer .column {
+    margin: 10px 20px 20px 20px ;
+}
+#footer .item i{
+    font-size: 20px;
+    padding:10px 5px;
+}
+#footer .divider.header {
+    margin-top: 10px;
+}
+#footer p {
+    text-align: center;
+}
+#footer .gem {
+    color: blueviolet;
+}
+#footer .heart {
+    color: tomato;
+}
+#footer .chat {
+    color: cadetblue;
+}
+#footer .paperclip {
+    color: rosybrown;
+}
+#footer .ui.list .list>a.item:hover .icon, .ui.list>a.item:hover .icon {
+    color: #50ab6d
+}
+
+/*About*/
+.aboutbody {
+    padding: 60px 20px 20px 50px;
+}
+.aboutbody .breadcrumb {
+    display: block;
+}
+.aboutbody .breadcrumb a{
+    text-decoration: none;
+    color: #777;
+}
+.aboutbody .breadcrumb a:hover{
+    color: #50ab6d;
+}
+.aboutbody .breadcrumb .icon{
+    color: #50ab6d;
+}
+.aboutbody img {
+    margin-top: 50px;
+    padding-left: 20px;
+}
+.aboutbody .aboutcontent p {
+    color: #666;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.ui.table {
+    margin: 50px auto;
+}
+.ui.large.right.floated.image {
+    position: absolute;
+    margin-left: 800px;
+    margin-top: -500px;
+}
+.ui.minimal.comments {
+    margin: 10px ;
+}
+.ui.comments .comment img.avatar,
+.ui.comments .comment .avatar img {
+  display: block;
+  margin: 0em auto;
+  width: 100%;
+  height: auto; // 100% doesn't work but auto does
+  border-radius: @avatarBorderRadius;
+}
+
+/*headericon*/
+@media all and (max-width:1217px) {
+    #menucover .ui.huge.header {
+        margin-top: 5px;
+        font-size:1.5em;    
+     }
+    #menucover .ui.huge.header .sub.header {
+        font-size:1em; 
+     }
+}
+@media all and (max-width:890px) {
+    #menucover .ui.huge.header {
+        margin: 0px;
+        font-size:1em;    
+     }
+    #menucover .ui.huge.header .sub.header {
+        font-size:0.7em; 
+     }
+}
+
+/*mobilemenue*/
+@media all and (max-width:670px) {
+    #menu {display: none;}
+    #menucover .ui.huge.header {display: none;}
+    #m_btn {display:inline-block;margin: 0px;}
+    #headerbg {height: 200px;}
+    #m_header {display:inline-block;}
+    #m_header.ui.header.inverted{font-size:1.2em;}
+    #m_header.sub.header{font-size:0.8em;}
+}
