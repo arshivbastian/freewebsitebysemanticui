@@ -9,10 +9,10 @@ $(function(){
     $('.pop').popup();
 
     $('.bodycontent .grid .button').hover(function() {
-        $('.bodycontent .grid .button').transition('tada');
+        $(this).transition('tada');
     });
-    $('.bodycontent .specialmove img').hover(function() {
-        $('.bodycontent .specialmove img').transition('pulse');
+    $('.bodycontent .specialmove img').mouseover(function() {
+        $(this).transition('pulse');
     });
 
     $('.ui.inverted.violet.button').click(function() {
@@ -21,5 +21,8 @@ $(function(){
     });
 
     $('.ui.dimmable').dimmer({on: 'hover'});
-        
+     
+    $('.portfoliobody .moving').mouseover(function() {
+        $(this).transition('bounce');
+    });
 });

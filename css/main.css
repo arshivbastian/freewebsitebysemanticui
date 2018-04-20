@@ -122,7 +122,7 @@ body {
 }
 
 /*About*/
-.aboutbody {
+.aboutbody ,.portfoliobody {
     padding: 60px 20px 20px 50px;
 }
 .aboutbody .breadcrumb {
@@ -166,6 +166,30 @@ body {
   height: auto; // 100% doesn't work but auto does
   border-radius: @avatarBorderRadius;
 }
+/*portfolio*/
+.portfoliobody .ui.image.label {
+        width: 200px;
+        height: 30px;
+}
+.portfoliobody .ui.image.label img {
+        width: 50px!important;
+        height: 30px!important;
+}
+.portfoliobody .ui.image.label .nam{
+        width: 50px!important;
+        height: 30px!important;
+        display: inline-block;
+}
+.portfoliobody .ui.image.label .detail{
+    width: 50px!important;
+    height: 30px!important;
+    display: inline-block;
+    position: relative;
+    float: right;
+    top:-30px;
+    right: -10px;
+}
+
 
 /*headericon*/
 @media all and (max-width:1217px) {
