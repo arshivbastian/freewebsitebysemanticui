@@ -25,4 +25,20 @@ $(function(){
     $('.portfoliobody .moving').mouseover(function() {
         $(this).transition('bounce');
     });
+
+    $('.contactbody .ui.red.button').click(function(){
+        $('.mini.modal.phone').modal('show');
+    });
+    $('.contactbody .ui.yellow.button').click(function(){
+        $('.mini.modal.office').modal('show');
+    });
+    $('.contactbody .ui.green.button').click(function(){
+        $('.fullscreen.modal.chat').modal('show');
+    });
+    $('.contactbody .ui.blue.button').click(function(){
+        $('.fullscreen.modal.email').modal('show');
+    });
+    $('.ui.modal .actions>.red.button').click(function(){
+        $('.modal').modal('hide');
+    });
 });
